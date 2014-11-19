@@ -1,0 +1,26 @@
+@import url("default.css");
+h1 {
+    background-color: #aeaeae !important;
+}
+h2 {
+    background-color: #c0c0c0 !important;
+}
+h3{
+    background-color: #fff !important;
+}
+h4{
+    background-color: #f5f5f5 !important;
+}
+
+div.bodywrapper {
+    margin: 0 0 0 280px !important;
+}
+div.sphinxsidebar {
+    width: 280px !important;
+}
+.logo {
+    margin-top:0px !important;
+}
+div.sphinxsidebarwrapper {
+    padding: 0px 5px 0 10px !important;
+}
