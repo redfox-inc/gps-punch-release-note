@@ -15,24 +15,26 @@ $(document).ready(function(){
 	        var cont_obj = $("<div/>").append(cont_.clone()).append(cont_elm.clone());
 	        $(v).balloon({ 
 	            contents: cont_obj,
-	            position:"top right",
+	            position:"top",
 				css: {
-				    "font-size": "60%",
-				    "opacity": "0.95",
+				    "font-size": "70%",
+				    "opacity": "0.97",
 				    border: 'solid 4px #5baec0',
 				    padding: '10px',
+				    maxWidth: '300px',
 				    fontWeight: 'bold',
-				    lineHeight: '3',
+				    lineHeight: '1',
 				    backgroundColor: '#666',
 				    color: '#fff'
 				} });
 	        $("#_link_").remove();
-        },1000);
+        },500);
         if (location.hash != "") {
-           $.smoothScroll({ 
-               scrollElement:null,
-               scrollTarget:'location.hash'
-           }); 
+           setTimeout(function(){
+               $.smoothScroll({ 
+                   scrollElement:$("body"),
+                   scrollTarget:$(location.hash)
+               });},1000);
         }
        
     });
