@@ -18,9 +18,7 @@ div.sphinxsidebar #searchbox input[type="submit"] {
 dt[id^='term'] {
     font-size: 90%;
 }
-@media screen and (max-device-width: 480px) {
-a.image-reference img { max-height: 200px;}
-}
+img.sp { max-height: 200px;}
 .related li:last-child {
     visibility: hidden;
 }

@@ -1,4 +1,15 @@
+var ua = {};
 $(document).ready(function(){
+    ua.name = window.navigator.userAgent.toLocaleLowerCase();
+    ua.isIPhone = ua.name.indexOf('iphone') >= 0;
+    ua.isAndroid = ua.name.indexOf('android') >= 0;
+    if (ua.isIPhone || ua.isAndroid) {
+        $("img").each(function(i,v){
+           cur_class = $(v).attr("class");
+           if (cur_class == "undefined") {cur_class = "";}
+           $(v).attr("class", cur_class + " sp");
+        });
+    }
     $("a.internal:has('em')").each(function(i,v) {
         var url = $(v).attr("href");
         var ref_id = url.match(/(#.+$)/)[0];
