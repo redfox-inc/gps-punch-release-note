@@ -15,7 +15,7 @@ $(document).ready(function(){
 	        var cont_obj = $("<div/>").append(cont_.clone()).append(cont_elm.clone());
 	        $(v).balloon({ 
 	            contents: cont_obj,
-	            position:"top",
+	            position:"top center",
 				css: {
 				    "font-size": "70%",
 				    "opacity": "0.97",

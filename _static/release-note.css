@@ -1,4 +1,4 @@
-@import url("default.css");
+@import url("cloud.css");
 h1 {
     background-color: #aeaeae !important;
 }
@@ -12,27 +12,15 @@ h4{
     background-color: #f5f5f5 !important;
 }
 
-div.bodywrapper {
-    margin: 0 0 0 280px !important;
-}
-div.sphinxsidebar {
-    width: 280px !important;
-}
-.logo {
-    margin-top:0px !important;
-}
-div.sphinxsidebarwrapper {
-    padding: 0px 5px 0 10px !important;
-}
 div.sphinxsidebar #searchbox input[type="submit"] {
     width: 50px;
 }
 dt[id^='term'] {
     font-size: 90%;
 }
-div.sphinxsidebar {
-    top: 0px !important;
+@media screen and (max-device-width: 480px) {
+a.image-reference img { max-height: 200px;}
 }
-div.related {
-    display:none !important;
+.related li:last-child {
+    visibility: hidden;
 }
