@@ -28,14 +28,17 @@ $(document).ready(function(){
 				    color: '#fff'
 				} });
 	        $("#_link_").remove();
-        },500);
+        },1000);
+        var target = null;
         if (location.hash != "") {
-           setTimeout(function(){
+            target = $(location.hash);
+        }
+        setTimeout(function(){
                $.smoothScroll({ 
                    scrollElement:$("body"),
-                   scrollTarget:$(location.hash)
-               });},1000);
-        }
+                   scrollTarget:target
+        });},500);
+        
        
     });
 

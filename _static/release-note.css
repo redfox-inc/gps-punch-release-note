@@ -30,3 +30,9 @@ div.sphinxsidebar #searchbox input[type="submit"] {
 dt[id^='term'] {
     font-size: 90%;
 }
+div.sphinxsidebar {
+    top: 0px !important;
+}
+div.related {
+    display:none !important;
+}
