@@ -6,7 +6,7 @@ $(document).ready(function(){
     if (ua.isIPhone || ua.isAndroid) {
         $("img").each(function(i,v){
            cur_class = $(v).attr("class");
-           if (cur_class == "undefined") {cur_class = "";}
+           if (typeof cur_class == "undefined") {cur_class = "";}
            $(v).attr("class", cur_class + " sp");
         });
     }
