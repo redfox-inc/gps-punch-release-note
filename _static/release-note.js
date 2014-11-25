@@ -33,7 +33,7 @@ $(document).ready(function(){
 				    border: 'solid 4px #5baec0',
 				    padding: '10px',
 				    maxWidth: '300px',
-				    fontWeight: 'bold',
+				    fontWeight: 'normal',
 				    lineHeight: '1',
 				    backgroundColor: '#666',
 				    color: '#fff'
