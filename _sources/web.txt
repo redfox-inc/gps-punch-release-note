@@ -37,14 +37,17 @@ ver.2.7.13 (2014/12/12)
 .. |status_color| image:: /img/ver.2.7.13_0.jpg
   :scale: 80%
   :alt: ステータスの色設定について
+.. |status_pin| image:: /img/ver.2.7.13_1.jpg
+  :scale: 80%
+  :alt: ステータスのピンについて
 .. |search_cond| image:: /img/ver.2.7.13_2.jpg
   :scale: 50%
   :alt: 検索条件の保存について
 
 - ステータス毎にピンの色が設定できるようにしました。
 
-  |status_color| 今回は色を15色から選べるようにします。
-   
+  |status_color| 従来のピン画像(2色)と新しいピン画像(15色)から選べるようにします。|status_pin|
+  
   次回以降、ステータス毎に画像を指定できるよう開発を進めます。
 
 |
