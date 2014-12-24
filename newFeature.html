@@ -33,7 +33,8 @@
     <script type="text/javascript" src="_static/release-note.js"></script>
     <script type="text/javascript" src="_static/jquery.cookie.js"></script>
     <script type="text/javascript" src="_static/cloud.js"></script>
-    <link rel="top" title="release-note 1.0 ドキュメント" href="index.html" /> 
+    <link rel="top" title="release-note 1.0 ドキュメント" href="index.html" />
+    <link rel="prev" title="Android" href="android.html" /> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -45,6 +46,9 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="総合索引"
              accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="android.html" title="Android"
+             accesskey="P">前へ</a> &nbsp; &nbsp;</li>
     <li><a href="index.html">release-note 1.0 ドキュメント</a> &raquo;</li>
  
       </ul>
@@ -60,11 +64,67 @@
 <div class="section" id="id1">
 <h1>最新情報<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <div class="section" id="id2">
-<h2>アプリのスポット機能改善 （未リリース）2015年1月中旬予定<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>スポット権限の細分化（未リリース）2015年1月中旬予定<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="id3">
 <h3>主な変更点<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <div class="section" id="id4">
-<h4>スポット検索の強化<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>アプリのスポット権限細分化<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<ul class="simple">
+<li>アプリのスポット操作権限について</li>
+</ul>
+<blockquote>
+<div><dl class="docutils">
+<dt>現状のグループ内のスポット操作権限の仕組みは以下のようになっております。</dt>
+<dd><a class="reference internal" href="_images/spotper_1.jpg"><img alt="スポットの権限について" src="_images/spotper_1.jpg" style="width: 760.8px; height: 513.6px;" /></a></dd>
+<dt>今までは、一般ユーザーのスポット操作権限は「閲覧」と「作成」しか変更できませんでしたが、今後は「編集」「削除」の権限も設定できるようにします。</dt>
+<dd><a class="reference internal" href="_images/spotper_2.jpg"><img alt="スポット権限の変更について" src="_images/spotper_2.jpg" style="width: 536.0px; height: 402.4px;" /></a></dd>
+</dl>
+</div></blockquote>
+<ul class="simple">
+<li>運用上の注意点</li>
+</ul>
+<hr class="docutils" />
+<blockquote>
+<div><p>グループ内の一般ユーザーの権限を変更したい場合はアプリを「<a class="reference internal" href="#spot-perm-ver"><em>最新バージョン</em></a>」にする必要があります。
+旧バージョンと <a class="reference internal" href="#spot-perm-ver"><em>新バージョン</em></a> が混在した状態では、下記の図のようになります。</p>
+<blockquote>
+<div><img alt="権限変更時の運用について" src="_images/spotper_3.jpg" /></div></blockquote>
+</div></blockquote>
+<p>～スムーズに運用するために</p>
+<blockquote>
+<div><ul class="simple">
+<li>バージョンアップ後に管理サイトで権限の設定ができます。設定後にユーザーの皆さまにアップデートを促してください。</li>
+<li>管理サイト&gt;ユーザー管理にて、各ユーザーがアプリのバージョンを実施しているかどうか確認できます。</li>
+</ul>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><a class="reference internal" href="_images/spotper_4.jpg"><img alt="アプリのバージョンについて" src="_images/spotper_4.jpg" style="width: 497.4px; height: 143.4px;" /></a></div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<p id="spot-perm-ver">本機能が利用できるバージョン</p>
+<blockquote>
+<div><ul class="simple">
+<li>管理サイト ver 2.7.14</li>
+<li>iOS   ver 3.4.2</li>
+<li>Android  ver 3.4.2.1</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>アプリのスポット機能改善 （未リリース）2015年1月中旬予定<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>上記、スポット権限の細分化と同じタイミングでリリースします。</p>
+<div class="section" id="id6">
+<h3>主な変更点<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id7">
+<h4>スポット検索の強化<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <ul class="simple">
 <li>キーワード検索</li>
 </ul>
@@ -139,11 +199,17 @@
   <h3><a href="index.html">バージョン情報</a></h3>
   <ul>
 <li><a class="reference internal" href="#">最新情報</a><ul>
-<li><a class="reference internal" href="#id2">アプリのスポット機能改善 （未リリース）2015年1月中旬予定</a></li>
+<li><a class="reference internal" href="#id2">スポット権限の細分化（未リリース）2015年1月中旬予定</a></li>
+<li><a class="reference internal" href="#id5">アプリのスポット機能改善 （未リリース）2015年1月中旬予定</a></li>
 </ul>
 </li>
 </ul>
 
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="android.html"
+                          title="Previous page">&larr; Android</a></p>
+  </div>
 <div id="searchbox" style="display: none">
   <h3>クイック検索</h3>
     <form class="search" action="search.html" method="get">
@@ -179,6 +245,9 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="総合索引"
              >索引</a></li>
+        <li class="right" >
+          <a href="android.html" title="Android"
+             >前へ</a> &nbsp; &nbsp;</li>
     <li><a href="index.html">release-note 1.0 ドキュメント</a> &raquo;</li>
  
       </ul>
