@@ -12,7 +12,9 @@ $(document).ready(function(){
     }
     $("a.internal:has('em')").each(function(i,v) {
         var url = $(v).attr("href");
-        var ref_id = url.match(/(#.+$)/)[0];
+        if (url.match(/(#.+$)/)) {
+            var ref_id = url.match(/(#.+$)/)[0];
+        }
         if (typeof url == "undefined" || typeof ref_id == "undefined") {
             return;
         }
