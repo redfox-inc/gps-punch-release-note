@@ -79,10 +79,71 @@
 <p>これにより、グループに所属する一般ユーザーがアプリを利用する場合のスポットの編集・削除を制限することができるようになります。</p>
 <p>アプリを含めた全体像については <a class="reference internal" href="newFeature.html"><em>こちら</em></a> をご確認ください。</p>
 </li>
+<li><p class="first">グループ一括登録のCSVフォーマットにスポットの編集・削除の設定を追加します。</p>
+<p>CSVフォーマットの変更点については以下の表の通りです。</p>
+<p>値を指定しない場合の初期値は全て管理者のみの権限設定になります。</p>
+<p>CSVのフォーマットに関する説明はグループ一括登録画面に記載があります。</p>
+</li>
 </ul>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+<table border="1" class="docutils">
+<caption>グループ一括登録CSVの変更点</caption>
+<colgroup>
+<col width="42%" />
+<col width="42%" />
+<col width="17%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">旧CSVフォーマット</th>
+<th class="head">新CSVフォーマット</th>
+<th class="head">変更</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>グループコード</td>
+<td>グループコード</td>
+<td>変更なし</td>
+</tr>
+<tr class="row-odd"><td>グループ名</td>
+<td>グループ名</td>
+<td>変更なし</td>
+</tr>
+<tr class="row-even"><td>ユーザー閲覧権限</td>
+<td>ユーザー閲覧権限</td>
+<td>変更なし</td>
+</tr>
+<tr class="row-odd"><td>スポット作成</td>
+<td>スポット作成</td>
+<td>変更なし</td>
+</tr>
+<tr class="row-even"><td>スポット閲覧</td>
+<td>スポット閲覧</td>
+<td>変更なし</td>
+</tr>
+<tr class="row-odd"><td><blockquote class="first last">
+<div>&#8212;</div></blockquote>
+</td>
+<td>スポット編集</td>
+<td>追加</td>
+</tr>
+<tr class="row-even"><td><blockquote class="first last">
+<div>&#8212;</div></blockquote>
+</td>
+<td>スポット削除</td>
+<td>追加</td>
+</tr>
+<tr class="row-odd"><td>行動予定作成</td>
+<td>行動予定作成</td>
+<td>変更なし</td>
+</tr>
+<tr class="row-even"><td>行動予定参照</td>
+<td>行動予定参照</td>
+<td>変更なし</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="id4">
 <h4>ユーザー管理<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h4>
