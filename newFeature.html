@@ -64,11 +64,150 @@
 <div class="section" id="id1">
 <h1>最新情報<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <div class="section" id="id2">
-<h2>スポット権限の細分化（未リリース）2015年1月中旬予定<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>スポットの詳細画面から報告書が入力できるようになります。<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="id3">
-<h3>主な変更点<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>利用シーン<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li>チェックインを忘れてしまった場合</li>
+<li>リモートで顧客対応をした場合</li>
+</ul>
+</div>
 <div class="section" id="id4">
-<h4>アプリのスポット権限細分化<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h3>アプリの操作<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p><img alt="スポット詳細から報告書の入力" src="_images/report_from_spot_1.jpg" /></p>
+<ul class="simple">
+<li>「スポットの詳細」画面の下部メニューに報告ボタン（画像）が表示されるようになります。</li>
+<li>報告ボタンをタップすると、報告書が入力できるステータスが表示されます。<ul>
+<li>チェックイン可能なステータスを選び、該当スポットがチェックイン範囲内に存在すればチェックイン可能です。</li>
+<li>ホーム画面での打刻と同様、履歴にも残ります。</li>
+</ul>
+</li>
+<li>報告書は設定によらず、すぐに入力画面を表示します。</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h3>運用上の注意点<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li>以下の仕様が、ホーム画面から打刻して報告書を入力した場合と異なります。</li>
+</ul>
+<p>スポットの詳細画面から報告書を入力した場合は、そのスポットの報告一覧に報告書が残ります。</p>
+<blockquote>
+<div><ul class="simple">
+<li>チェックインしなくてもスポットの報告一覧に報告書が残ります。</li>
+<li>報告書のフォーマットに「スポット選択フォーム」がなくてもスポットの報告一覧に報告書が残ります。</li>
+<li>スポットAから入力した報告書の「スポット選択フォーム」に別のスポットを選択しても、スポットAに報告一覧に報告書が残ります。</li>
+</ul>
+</div></blockquote>
+<p>※ チェックインをしなかった場合は、報告書CSVデータに訪問日が入りません。</p>
+<table border="1" class="docutils">
+<caption>スポットAにチェックインせず、報告書の「スポット選択フォーム」にてスポットBを選択した場合</caption>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">経路</th>
+<th class="head">スポットA</th>
+<th class="head">スポットB</th>
+<th class="head">CSV出力時の訪問日</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>ホーム画面</td>
+<td>なし</td>
+<td>報告書あり</td>
+<td>なし</td>
+</tr>
+<tr class="row-odd"><td>スポットの詳細画面</td>
+<td>報告書あり</td>
+<td>なし</td>
+<td>なし</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table border="1" class="docutils">
+<caption>スポットAにチェックインして、報告書の「スポット選択フォーム」にてスポットBを選択した場合</caption>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">経路</th>
+<th class="head">スポットA</th>
+<th class="head">スポットB</th>
+<th class="head">CSV出力時の訪問日</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>ホーム画面</td>
+<td>チェックイン履歴あり</td>
+<td>報告書あり</td>
+<td>あり</td>
+</tr>
+<tr class="row-odd"><td>スポット詳細画面</td>
+<td>報告書あり</td>
+<td>なし</td>
+<td>あり</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table border="1" class="docutils">
+<caption>スポットAにチェックインして、報告書の「スポット選択フォーム」でもスポットAを選択した場合</caption>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">経路</th>
+<th class="head">スポットA</th>
+<th class="head">スポットB</th>
+<th class="head">CSV出力時の訪問日</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>ホーム画面</td>
+<td>報告書あり</td>
+<td>なし</td>
+<td>あり</td>
+</tr>
+<tr class="row-odd"><td>スポット詳細画面</td>
+<td>報告書あり</td>
+<td>なし</td>
+<td>あり</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<p>本機能が利用できるバージョン</p>
+<blockquote>
+<div><ul class="simple">
+<li>iOS   ver 3.4.3</li>
+<li>Android  ver 3.4.3</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>スポット権限の細分化（2015/1/23）<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id7">
+<h3>主な変更点<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id8">
+<h4>アプリのスポット権限細分化<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <ul class="simple">
 <li>アプリのスポット操作権限について</li>
 </ul>
@@ -118,13 +257,13 @@
 </div>
 </div>
 </div>
-<div class="section" id="id5">
-<h2>アプリのスポット機能改善 （未リリース）2015年1月中旬予定<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id9">
+<h2>アプリのスポット機能改善 （2015/1/23）<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>上記、スポット権限の細分化と同じタイミングでリリースします。</p>
-<div class="section" id="id6">
-<h3>主な変更点<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<div class="section" id="id7">
-<h4>スポット検索の強化<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="section" id="id10">
+<h3>主な変更点<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id11">
+<h4>スポット検索の強化<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <ul class="simple">
 <li>キーワード検索</li>
 </ul>
@@ -199,8 +338,9 @@
   <h3><a href="index.html">バージョン情報</a></h3>
   <ul>
 <li><a class="reference internal" href="#">最新情報</a><ul>
-<li><a class="reference internal" href="#id2">スポット権限の細分化（未リリース）2015年1月中旬予定</a></li>
-<li><a class="reference internal" href="#id5">アプリのスポット機能改善 （未リリース）2015年1月中旬予定</a></li>
+<li><a class="reference internal" href="#id2">スポットの詳細画面から報告書が入力できるようになります。</a></li>
+<li><a class="reference internal" href="#id6">スポット権限の細分化（2015/1/23）</a></li>
+<li><a class="reference internal" href="#id9">アプリのスポット機能改善 （2015/1/23）</a></li>
 </ul>
 </li>
 </ul>
