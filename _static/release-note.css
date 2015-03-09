@@ -20,7 +20,10 @@ div.sphinxsidebar #searchbox input[type="submit"] {
 }
 dt[id^='term'] {
     font-size: 100%;
-    font-style:bold;
+    font-weight:bold;
+}
+a.reference {
+    text-decoration: underline;
 }
 img.sp { max-height: 200px;}
 .related li:last-child {

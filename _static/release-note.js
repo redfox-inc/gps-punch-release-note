@@ -10,17 +10,21 @@ $(document).ready(function(){
            $(v).attr("class", cur_class + " sp");
         });
     }
+    var dummy_ ;
     $("a.internal:has('em')").each(function(i,v) {
         var url = $(v).attr("href");
-        if (url.match(/(#.+$)/)) {
-            var ref_id = url.match(/(#.+$)/)[0];
+        if (url.match(/^(.+)(#.+)$/)) {
+            var _url = url.match(/^(.+)(#.+)$/)[1];
+            var ref_id = url.match(/^(.+)(#.+)$/)[2];
         }
-        if (typeof url == "undefined" || typeof ref_id == "undefined") {
+        if (typeof _url == "undefined" || typeof ref_id == "undefined") {
             return;
         }
-        var dummy_ = $("<iframe />").attr("src",url).attr("id","_link_").css("width","0px").appendTo("body");
         if (typeof dummy_ == "undefined") {
-            return;
+        	dummy_ = $("<iframe />").attr("src",_url).attr("id","_link_").css("width","0px").appendTo("body");
+        	if (typeof dummy_ == "undefined") {
+            	return;
+            }
         }
         setTimeout(function(){
 	        var cont_ = dummy_.contents().find(ref_id);
@@ -30,17 +34,17 @@ $(document).ready(function(){
 	            contents: cont_obj,
 	            position:"top center",
 				css: {
-				    "font-size": "70%",
+				    "font-size": "85%",
 				    "opacity": "0.97",
 				    border: 'solid 4px #5baec0',
 				    padding: '10px',
-				    maxWidth: '300px',
+				    maxWidth: '360px',
 				    fontWeight: 'normal',
 				    lineHeight: '1',
-				    backgroundColor: '#666',
-				    color: '#fff'
+				    backgroundColor: '#f0f8ff',
+				    color: '#000'
 				} });
-	        $("#_link_").remove();
+	       
         },1000);
         var target = null;
         if (location.hash != "") {
