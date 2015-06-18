@@ -32,3 +32,9 @@ img.sp { max-height: 200px;}
 .strike {
     text-decoration: line-through;
 }
+.figure p.caption {
+    font-weight:bold;
+    text-align: center !important;
+    margin: 2px 5px;
+    text-decoration: underline;
+}
