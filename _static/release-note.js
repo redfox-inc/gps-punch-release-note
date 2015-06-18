@@ -46,6 +46,7 @@ $(document).ready(function(){
 				} });
 	       
         },1000);
+        $(v).click(function(){return false});
         var target = null;
         if (location.hash != "") {
             target = $(location.hash);
