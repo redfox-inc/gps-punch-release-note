@@ -7,7 +7,12 @@
    web
    ios
    android
-   newFeature
+   
+.. only:: customer
+
+   .. toctree::
+      :maxdepth: 1
+      newFeature
    
 |
 |
