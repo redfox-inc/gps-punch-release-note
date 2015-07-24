@@ -12,6 +12,7 @@
 
    .. toctree::
       :maxdepth: 1
+   
       newFeature
    
 |
