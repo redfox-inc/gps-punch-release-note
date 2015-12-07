@@ -5,6 +5,60 @@
 最新情報
 ==============
 
+.. |barcode_1| image:: /img/barcode_overview.jpg
+  :scale: 80%
+  :alt: バーコード読み取り
+  
+.. |barcode_2| image:: /img/barcode_parts.jpg
+  :scale: 80%
+  :alt: バーコード読み取り
+  
+.. |barcode_3| image:: /img/barcode_read.jpg
+  :scale: 80%
+  :alt: バーコード読み取り
+  
+報告書にバーコード読み取り機能を追加しました。現場での活用方法がさらに広がります。
+####################################################################################
+
+  
+  現場でバーコードを読み取り、変換した文字を報告書に入力できます。
+  
+  |barcode_1|
+  
+    報告書の設定
+  --------------------
+  
+    - 報告書の設定
+   
+      * 管理サイトの[報告設定] > [フォーマット設定]より報告書を作成してください。(管理サイトマニュアルP.46参照)
+      * フィールド追加より[バーコードリーダー]のフィールドを追加することで利用可能です。
+      |barcode_2|
+   
+    - アプリでの利用
+    
+      * アプリの[設定]より[設定を同期]を実行することで、報告書が利用できるようになります。
+      * 報告書内の「コードをスキャン」の箇所をタップするとカメラが起動して、バーコードの読み取りができます。
+      |barcode_3|
+    
+    .. list-table:: 利用できるバーコードの種類
+       :widths: 30, 60
+       
+       * - Android
+         - CALENDAR_EVENT, CODABAR, CODE_128, CODE_39, CODE_93, CONTACT_INFO, DATA_MATRIX, DRIVER_LICENSE, EAN_13, EAN_8, EMAIL, GEO, ISBN, ITF, PDF417, PHONE, PRODUCT, QR_CODE, SMS, TEXT, URL, WIFI
+       * - iOS7以降 
+         - UPCE, Code39, Code39Mod43, EAN13, EAN8, Code93, Code128, PDF417, QR, Aztec
+       * - iOS8以降
+         - 上記 + Interleaved2of5, ITF14, DataMatrix
+      
+    .. note::
+    
+      本機能が利用できるバージョン
+
+        - iOS      ver 3.5.4 以降
+        - Android  ver 3.5.4.0 以降
+|
+|
+    
 
 v3.5.0:スポット機能の強化により、現場での活用方法がさらに広がります。
 ######################################################################
