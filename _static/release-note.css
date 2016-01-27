@@ -38,3 +38,8 @@ img.sp { max-height: 200px;}
     margin: 2px 5px;
     text-decoration: underline;
 }
+@-moz-document url-prefix() {
+	 
+	img.align-center{ max-width: 400px !important;}
+	div.sphinxsidebar p.logo a {display: block !important;]
+}
