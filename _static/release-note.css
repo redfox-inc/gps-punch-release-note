@@ -38,6 +38,11 @@ img.sp { max-height: 200px;}
     margin: 2px 5px;
     text-decoration: underline;
 }
+div.section>h2.highlighted {
+    border-color: #FF5151 !important;
+    border-left-width:10px;
+     
+}
 @-moz-document url-prefix() {
 	 
 	img.align-center{ max-width: 400px !important;}
