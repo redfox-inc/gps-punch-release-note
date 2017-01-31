@@ -11,7 +11,7 @@ $(document).ready(function(){
         });
     }
     var dummy_ ;
-    $("a.internal:has('em')").each(function(i,v) {
+    $("a.internal[href^='glossary.html']").each(function(i,v) {
         var url = $(v).attr("href");
         if (url.match(/^(.+)(#.+)$/)) {
             var _url = url.match(/^(.+)(#.+)$/)[1];
