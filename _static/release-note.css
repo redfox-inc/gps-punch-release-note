@@ -1,50 +1,111 @@
 @import url("cloud.css");
 h1 {
-    background-color: #aeaeae !important;
+    background-color:;
 }
+
 h2 {
-    background-color: #c0c0c0 !important;
+    background-color:;
+    font-size: 18px !important;
     font-style:normal !important;
 }
+
 h3{
-    background-color: #fff !important;
+    background-color:;
 }
+
 h4{
-    background-color: #f5f5f5 !important;
+    background-color:;
 }
+
 img {
     height: auto !important;
 }
+
+img.logo {
+    max-width: 80% !important;
+}
+
+div.sphinxsidebar a:hover {
+    color: #01A2C9 !important;
+    background: none !important;
+    border-style: solid !important;
+    border-color: #F7F7F7 !important;
+    text-decoration: underline !important;
+}
+
+div.body a:hover {
+    color: #01A2C9 !important;
+    background: none !important;
+    text-decoration: underline !important;
+}
+
+a:hover img {
+    opacity:0.6 !important;
+    filter:alpha(opacity=60) !important;
+    -ms-filter: “alpha( opacity=60 )” !important;
+}
+
+div.relbar-top a:hover {
+    background:rgba(0,0,0,0.6);
+    border-style: solid !important;
+    border-color: #e3041b !important;
+    color: #ffffff !important; 
+}
+
+div.relbar-bottom a:hover {
+    background:rgba(0,0,0,0.6);
+    border-style: solid !important;
+    border-color: #e3041b !important;
+    color: #ffffff !important; 
+}
+
 div.sphinxsidebar #searchbox input[type="submit"] {
     width: 50px;
+    color: #ffffff !important;
 }
+
+#searchbox input[type="submit"]:hover {
+    border-style: solid !important;
+    border-color: #007FA0 !important;
+}
+
 dt[id^='term'] {
     font-size: 100%;
     font-weight:bold;
 }
+
 a.reference {
     text-decoration: underline;
 }
-img.sp { max-height: 200px;}
+
+img.sp { 
+    max-height: 200px;
+}
+
 .related li:last-child {
     visibility: hidden;
 }
+
 .strike {
     text-decoration: line-through;
 }
+
 .figure p.caption {
     font-weight:bold;
     text-align: center !important;
     margin: 2px 5px;
     text-decoration: underline;
 }
+
+
 div.section>h2.highlighted {
-    border-color: #FF5151 !important;
-    border-left-width:10px;
-     
+    border-color: #c70418 !important;
+    border-left-width:6px;
+    color: #ffffff;
 }
+
+
 @-moz-document url-prefix() {
-	 
 	img.align-center{ max-width: 400px !important;}
 	div.sphinxsidebar p.logo a {display: block !important;]
 }
