@@ -109,3 +109,7 @@ div.section>h2.highlighted {
 	img.align-center{ max-width: 400px !important;}
 	div.sphinxsidebar p.logo a {display: block !important;]
 }
+
+a[href="genindex.html"]{
+    display:none !important;
+}

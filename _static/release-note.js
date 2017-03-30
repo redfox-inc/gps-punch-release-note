@@ -1,5 +1,6 @@
 var ua = {};
 $(document).ready(function(){
+    $("a[href='genindex.html']").hide();
     ua.name = window.navigator.userAgent.toLocaleLowerCase();
     ua.isIPhone = ua.name.indexOf('iphone') >= 0;
     ua.isAndroid = ua.name.indexOf('android') >= 0;
