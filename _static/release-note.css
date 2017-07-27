@@ -104,10 +104,12 @@ div.section>h2.highlighted {
     color: #ffffff;
 }
 
-h3.highlighted {
+h3.highlighted, h4.highlighted {
     background-color: initial;
-
+    text-decoration: underline;
+    text-decoration-color: #c70418;
 }
+
 @-moz-document url-prefix() {
 	img.align-center{ max-width: 400px !important;}
 	div.sphinxsidebar p.logo a {display: block !important;]
