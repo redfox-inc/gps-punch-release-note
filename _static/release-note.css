@@ -10,11 +10,11 @@ h2 {
 }
 
 h3{
-    background-color:;
+    background-color:initial;
 }
 
 h4{
-    background-color:;
+    background-color:initial;
 }
 
 img {
@@ -104,7 +104,10 @@ div.section>h2.highlighted {
     color: #ffffff;
 }
 
+h3.highlighted {
+    background-color: initial;
 
+}
 @-moz-document url-prefix() {
 	img.align-center{ max-width: 400px !important;}
 	div.sphinxsidebar p.logo a {display: block !important;]
