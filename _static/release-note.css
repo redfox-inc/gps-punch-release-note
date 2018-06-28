@@ -68,6 +68,41 @@ div.sphinxsidebar #searchbox input[type="submit"] {
     border-style: solid !important;
     border-color: #007FA0 !important;
 }
+table.simpletable {
+  border-collapse: collapse;
+  border-bottom: 1px solid #E6E6E6;
+  border-right: 1px solid #E6E6E6;
+  line-height: 1.5;
+  text-align: left;
+  width: 80%;
+}
+table.simpletable th {
+  background-color: #736d71;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px;
+  text-align: center;
+  vertical-align : middle;
+}
+
+
+table.simpletable td {
+  background-color: #fff9f5;
+  font-size: 13px;
+  padding: 10px;
+  vertical-align: top;
+}
+table.simpletable tr.row-odd td {
+  background-color: #fffff9;
+}
+
+table.simpletable tr:nth-child(even) th {
+  background-color: #17619C;
+}
+
+
 
 dt[id^='term'] {
     font-size: 100%;
@@ -118,3 +153,4 @@ h3.highlighted, h4.highlighted {
 a[href="genindex.html"]{
     display:none !important;
 }
+
